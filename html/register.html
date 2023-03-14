@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/register.css">
+</head>
+
+<body>
+
+    <form class="login" action="/register" method="post">
+        <h4 class="mb-4">Đăng ký</h4>
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" name="email" placeholder="name@example.com">
+            <label for="floatingInput">Email</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="username" name="userName" placeholder="name@example.com">
+            <label for="username">Username</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="fullName" name="fullName" placeholder="name@example.com">
+            <label for="fullName">Fullname</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="identity" name="identityCard" placeholder="name@example.com">
+            <label for="identity">Identity card</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="phone" name="phoneNumber" placeholder="name@example.com">
+            <label for="phone">Phone number</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="address" name="address" placeholder="name@example.com">
+            <label for="address">Address</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="floatingPassword" name="password" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+        </div>
+        <div class="form-floating">
+            <input type="password" class="form-control" id="floatingRePassword" name="rePassword"
+                placeholder="Password">
+            <label for="floatingRePassword">Re-password</label>
+        </div>
+        <button type="button" class="btn mt-3 float-end" onclick="success()">Đăng ký</button>
+    </form>
+    <script>
+        function success() {
+            swal("Đăng ký tài khoản thành công!", "FPTUShare thank you 🖤", "success")
+                .then(function () {
+                    window.location.href = "/html/home.html";
+                });
+        }
+    </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+
+</html>

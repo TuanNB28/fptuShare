@@ -1,0 +1,65 @@
+body {
+    background-image: url('/images/3625482.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login {
+    overflow: hidden;
+    background-color: white;
+    padding: 20px 30px 30px 30px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    transform: translate(-50%, -50%);
+    transition: transform 300ms, box-shadow 300ms;
+    box-shadow: 5px 10px 10px rgba(2, 128, 144, 0.2);
+}
+
+.login::before, .login::after {
+    content: '';
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 45%;
+    border-bottom-left-radius: 35%;
+    border-bottom-right-radius: 40%;
+    z-index: -1;
+}
+
+.login::before {
+    left: 40%;
+    bottom: -110%;
+    background-color: rgba(69, 105, 144, 0.15);
+    animation: wawes 6s infinite linear;
+}
+
+.login::after {
+    left: 35%;
+    bottom: -105%;
+    background-color: rgba(2, 128, 144, 0.2);
+    animation: wawes 7s infinite;
+}
+
+@keyframes wawes {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.btn{
+    background-color: #F89636;
+    color: white;
+    padding: 12px 22px;
+}
+
+.btn:hover {
+    background-color: #ef7b08;
+    color: white;
+}

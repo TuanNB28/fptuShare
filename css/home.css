@@ -1,0 +1,146 @@
+:root {
+    --importantColor: #F89636;
+    --btnChooseColor: #FCCDA0;
+    --btnHoverColor: #e0e0e0;
+}
+
+#loginbtn {
+    padding: 12px 22px;
+}
+
+#registerbtn {
+    padding: 12px 22px;
+}
+
+#header {
+    background-color: var(--importantColor);
+}
+
+#searchTicketInModal {
+    padding: 10px 12px;
+}
+
+.btn-outline-light:hover,
+.btn.btn-outline-light:active {
+    color: var(--importantColor);
+}
+
+.change-color-text{
+    color: var(--importantColor);
+}
+
+#spanInModal {
+    font-size: 12px;
+}
+
+#bodyContent {
+    width: 100%;
+    background-image: url('/images/transfer.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+::-webkit-scrollbar {
+    display: none !important;
+}
+
+.hidden {
+    display: none;
+}
+
+#pills-tab {
+    margin: 0 165px;
+}
+
+#pills-tabContent{
+    margin: 0 135px;
+}
+
+@media (max-width: 1566px) {
+    #pills-tab {
+        margin: 0;
+    }
+
+    #pills-tabContent{
+        margin: 0;
+    }
+}
+
+#pills-tab .nav-link.active {
+    background-color: var(--importantColor);
+}
+
+.nav-link:hover {
+    background-color: var(--btnHoverColor);
+}
+
+@media (max-width: 580px) {
+    #my-heading {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+
+#myTab .nav-link.active {
+    background-color: var(--importantColor);
+    color: white !important;
+}
+
+#myTab .nav-link {
+    font-size: 0.9rem;
+}
+
+.form-check-input:checked[type=radio] {
+    background-color: var(--importantColor);
+    border-color: var(--importantColor);
+}
+
+.form-check-input:checked[type=radio] {
+    background-image: none;
+}
+
+.form-check-input:hover,
+.form-check-label:hover {
+    cursor: pointer;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border: 1px solid var(--importantColor);
+    border-color: var(--importantColor);
+    box-shadow: none; /* optional - remove the default focus box shadow */
+}
+
+.row.border .col-12,
+.row.border .col-6 {
+    padding: 0;
+}
+
+#xemGia {
+    padding: 10px 30px;
+}
+
+.change-bg-color{
+    background-color: var(--btnChooseColor);
+}
+
+#btnXacNhan{
+    background-color: var(--importantColor);
+}
+
+#btnXacNhan:hover{
+    background-color: #fa8612;
+}
+
+.pic {
+    width: 250px;
+    height: 250px;
+}
+
+.imgHover {
+    transition: transform 0.3s ease;
+}
+
+.imgHover:hover {
+    transform: scale(1.1);
+}

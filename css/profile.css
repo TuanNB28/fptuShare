@@ -1,0 +1,84 @@
+:root {
+    --importantColor: #F89636;
+    --btnChooseColor: #FCCDA0;
+    --btnHoverColor: #e0e0e0;
+}
+
+::-webkit-scrollbar {
+    display: none !important;
+}
+
+#avt {
+    width: 150px;
+    height: 150px;
+}
+
+.change-color-text{
+    color: var(--importantColor);
+}
+
+.nav-link:hover {
+    color: var(--importantColor);
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: var(--importantColor);
+}
+
+#profileAvtTab {
+    padding-bottom: 420px;
+    padding-right: 0;
+}
+
+.card-header {
+    background-color: var(--importantColor);
+}
+
+.card-body {
+    background: var(--btnChooseColor);
+}
+
+#updateInforBtn {
+    padding: 12px 22px;
+    background-color: var(--importantColor);
+}
+
+@media (max-width: 768px) {
+    #profileAvtTab {
+        padding-bottom: 20px;
+    }
+}
+
+.card-mg {
+    margin-left: 350px;
+    margin-right: 350px;
+}
+
+@media (max-width: 1610px) {
+    .card-mg {
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+}
+
+@media (max-width: 1450px) {
+    .card-mg {
+        margin-left: 250px;
+        margin-right: 250px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .card-mg {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+}
+
+@media (max-width: 995px) {
+    .card-mg {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+
